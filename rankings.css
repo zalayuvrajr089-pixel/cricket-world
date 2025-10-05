@@ -1,0 +1,165 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5snLC2S3kRRa90nTEmLGzbqFSfHJASy7Kkg&s") no-repeat center center/cover;
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+   /* ===== Header & Navbar ===== */
+  header{
+    position:sticky;top:0;z-index:1000;
+    background:rgba(236, 3, 3, 1);
+    backdrop-filter:blur(10px);
+    padding:20px 12px;text-align:center;
+  }
+  header h1{
+    font-size:2.8rem;
+    background: linear-gradient(to right,#ffd700,#fff);;
+    -webkit-text-fill-color:transparent;
+    animation: glow 2s infinite alternate;
+  }
+  @keyframes glow{
+    0%{text-shadow:0 0 10px #ffd700,0 0 20px #fff;}
+    100%{text-shadow:0 0 20px #fff,0 0 30px #ffd700;}
+  }
+  nav{
+    display:flex;justify-content:center;flex-wrap:wrap;margin-top:10px;gap:12px;
+  }
+  nav a{
+    text-decoration:none;color:#fff;font-weight:600;padding:8px 15px;border-radius:8px;
+    background:rgba(255,255,255,0.1);
+    transition:all 0.3s ease;
+  }
+  nav a:hover{
+    background:#ffd700;color:#000;transform:scale(1.1);
+  }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: url('https://wallpapercave.com/wp/wp6591102.jpg') no-repeat center/cover;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 42px;
+      text-shadow: 0 0 15px black;
+    }
+    .hero p {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #dbd9b5;
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(241, 64, 10, 1);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(0,255,255,0.5);
+    }
+
+    body {
+      background: #001f3f;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #f9fd07;
+      margin-bottom: 40px;
+    }
+    table {
+      width: 95%;
+      margin: auto;
+      border-collapse: collapse;
+      background: #41443d;
+      box-shadow: 0 0 20px rgba(216, 168, 114, 0.3);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+    th {
+      background: #003f7f;
+      color: #00ffff;
+    }
+    tr:nth-child(even) {
+      background-color: #003366;
+    }
+    tr:hover {
+      background-color: #005580;
+    }
+    .player-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .flag {
+      width: 28px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .player-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    caption {
+      caption-side: bottom;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+
+     footer {
+      text-align: center;
+      padding: 20px;
+      color: #0e0e0e;
+      font-size: 0.9rem;
+      border-top: 1px solid #f0eaea;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .about-container {
+        padding: 20px;
+      }
+    }
+        

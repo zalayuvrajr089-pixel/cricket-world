@@ -1,0 +1,258 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/27feb2bb-aeb4-4a83-9fb6-8f3f2a15885e/b0e209d9-c15b-4048-95f6-281a6e6ca158.png') no-repeat center center/cover;
+      color: rgba(29, 28, 28, 0);
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 94%, 48%);
+  backdrop-filter:blur(10px);
+  padding:20px 12px;text-align:center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(26, 24, 24, 0.88);
+      color: rgb(43, 39, 39);
+      font-size: 1rem;
+      outline: none;
+      backdrop-filter: blur(4px);
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #b61717;
+    }
+
+    button {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 30px;
+      color: rgb(85, 83, 83);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .info-box {
+      flex: 1;
+      min-width: 250px;
+      background: rgba(255, 255, 255, 0);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
+    .info-box i {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #00ffd5;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 15px;
+      margin-top: 2rem;
+      box-shadow: 0 0 20px rgba(0, 255, 170, 1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: rgba(255,255,255,0.05);
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: hsla(220, 13%, 28%, 0.98);
+      border-bottom: 2px solid rgba(245, 12, 12, 1);
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 20px;
+      color: hsla(17, 95%, 50%, 1.00);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-size: 0.9rem;
+    }
+     /* Social Buttons Container */
+
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px; /* Buttons ke beech space */
+}
+
+/* Common Button Styles */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #3b3131;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+/* Icon Spacing */
+.social-btn i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* Twitter Button */
+.social-btn.twitter {
+  background: #1DA1F2;
+}
+.social-btn.twitter:hover {
+  background: #0d8ddb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(29, 161, 242, 0.4);
+}
+
+/* Facebook Button */
+.social-btn.facebook {
+  background: #1877F2;
+}
+.social-btn.facebook:hover {
+  background: #145dbf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(24, 119, 242, 0.4);
+}
+/* Instagram Button */
+.social-btn.instagram {
+  background: #E1306C;
+}
+
+.social-btn.instagram:hover {
+  background: #c72d5a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+/* WhatsApp Button */
+.social-btn.whatsapp {
+  background: #25D366;
+}
+
+.social-btn.whatsapp:hover {
+  background: #1ebe57;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: rgb(97, 92, 92);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: Arial, sans-serif;
+}
+
+.social-btn i {
+  font-size: 18px;
+}
+
+/* Colors for each platform */
+.social-btn.youtube { background: #FF0000; }
+.social-btn.email { background: #555555; }
+.social-btn.telegram { background: #0088cc; }
+
+/* Hover Effects */
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}

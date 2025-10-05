@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket World - OTP Login</title>
+<link rel="stylesheet" href="login.css"/>
+<style>
+  
+</style>
+</head>
+<body>
+<div class="login-container">
+  <h2>Login with OTP</h2>
+  
+  <div id="step1">
+    <input type="text" id="phone" placeholder="Enter Mobile Number">
+    <button onclick="sendOTP()">Send OTP</button>
+  </div>
+
+  <div id="step2" style="display:none;">
+    <input type="text" id="otp" placeholder="Enter OTP">
+    <button onclick="verifyOTP()">Verify OTP</button>
+  </div>
+
+  <div class="error" id="errorMsg"></div>
+</div>
+
+<script>
+let generatedOTP;
+
+function sendOTP() {
+  const phone = document.getElementById('phone').value;
+  const errorMsg = document.getElementById('errorMsg');
+
+  if(phone.length !== 10 || isNaN(phone)) {
+    errorMsg.textContent = "Enter a valid 10-digit number!";
+    return;
+  }
+
+  generatedOTP = Math.floor(1000 + Math.random() * 9000); // 4-digit OTP
+  alert("Your OTP is: " + generatedOTP); // Normally sent via SMS
+  document.getElementById('step1').style.display = "none";
+  document.getElementById('step2').style.display = "block";
+  errorMsg.textContent = "";
+}
+
+function verifyOTP() {
+  const otpInput = document.getElementById('otp').value;
+  const errorMsg = document.getElementById('errorMsg');
+
+  if(otpInput == generatedOTP) {
+    alert("Login Successful!");
+    window.location.href = "index.html"; // redirect to homepage
+  } else {
+    errorMsg.textContent = "Incorrect OTP, try again!";
+  }
+}
+
+</script>
+</body>
+</html>
